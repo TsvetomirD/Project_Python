@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="../static/showcase.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <section>
@@ -13,7 +14,7 @@
     
     <section>
         <div class="container reveal">
-        <h2>3d mcl60 view</h2>
+        <h2>Introduction</h2>
         <hr>
             <div class="cards">
                 <div class="text-card">
@@ -34,12 +35,73 @@
                 </div>
             </div>
         </div>
-        </section>
+    </section>
+
+    <section>
+        <div class="container reveal">
+        <h2>3d view</h2>
+        <hr>
         <div class="model-container">
             <iframe src='https://my.spline.design/mcl60-267c7a771218776fc1dba8eb9827935b/' frameborder='0' width='1200px' height='650px'></iframe>
         </div>
+        </div>
+    </section>
 
-    <script src="../js/model.js"></script>
+        <section>
+            <div class="container reveal">
+            <h2>Technical introduction</h2>
+            <hr>
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>What is MCL60?</h3>
+                        <p>The McLaren MCL60 is a Formula One car designed and constructed by McLaren, initially under the direction of James Key, to compete in the 2023 Formula One World Championship.</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Debut</h3>
+                        <p>The car made its competitive début at the 2023 Bahrain Grand Prix. It was driven by Lando Norris and Oscar Piastri, Norris for his fifth season with McLaren and Piastri in his rookie year.</p>
+                    </div>
+                    <div class="text-card">
+                        <h3>Achievements</h3>
+                        <p>British Grand Prix (Silverstone) - Lando Norris finished in 2nd place, and Oscar Piastri came in 4th.
+                           Hungarian Grand Prix - Norris secured another 2nd place finish, while Piastri finished 5th.
+                           Japanese Grand Prix - Both drivers achieved podium finishes, with Norris in 2nd place and Piastri in 3rd.
+                           Qatar Grand Prix - Piastri won the Sprint race and finished 2nd in the main race, while Norris finished 3rd.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <section>
+            <div class="container reveal">
+            <h2> Launch Video</h2>
+            <hr>
+                <div class="vid">
+                    <iframe width="1000" height="550" src="https://www.youtube.com/embed/qsRZ0vGIdtk?si=m6jX07-FXKWd_LBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container reveal">
+            <h2> Photo gallery</h2>
+            <hr>
+                
+            </div>
+        </section>
+
+        <button id="aboutBtn" class="button-shade">About us</button>
+        <div id="aboutMenu" class="modal hidden">
+            <div class="modal-content">
+                <span id="closeBtn" class="close">&times;</span>
+                <h2>За нас</h2>
+                <p>Ние сме ученици от 9.Г клас като нашия проект е с цел да обогати знанията на хора, които имат желание да разберат за формулата като кола. За целта използвахме 3D модел на McLaren от 2023г.</p>
+            </div>
+        </div>
+
+        <script src="../js/model.js"></script>
+        <script src="../js/aboutMenu.js"></script>
+        <script src="../js/button-script.js"></script>
 
 </body>
 </html>
