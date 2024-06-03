@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../static/showcase.css">
+</head>
+<body>
+    <section>
+    <div class="title_box">
+        <img src="../wp11994017-mclaren-mcl60-wallpapers.jpg">
+        <div class="overlay"></div>
+        <div class="overlay-text"><h1>F1 MCL60 SHOWCASE</h1></div>
+    </div>
+    </section>
+    
+    <section>
+        <div class="container reveal">
+        <h2>3d mcl60 view</h2>
+        <hr>
+            <div class="cards">
+                <div class="text-card">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm</p>
+                </div>
+                <div class="text-card">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusn</p>
+                </div>
+                <div class="text-card">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiust</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="model-container">
+            <iframe src='https://my.spline.design/mcl60-267c7a771218776fc1dba8eb9827935b/' frameborder='0' width='1200px' height='650px'></iframe>
+        </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+        
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150; 
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+    </script>
+
+</body>
+</html>

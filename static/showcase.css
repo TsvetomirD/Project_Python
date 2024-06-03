@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+body {
+    background-color: #808080;
+    /* background-image: url("../"); */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato-Bold';
+}
+
+
+.title_box {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.title_box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.title_box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.title_box .overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+html::-webkit-scrollbar-track {
+    background: rgb(179, 177, 177);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+  }
+
+.model-container {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+hr{
+    width: 300px;
+    border: 6px solid #4a4a4a;
+    border-radius: 7px;
+    margin-bottom: 20px;
+  }
+
+section .container{
+    margin: 80px;
+}
+
+section h2{
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+section .cards{
+    display: flex;
+}
+
+section .cards .text-card{
+    background:#FF8000;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+section .cards .text-card h3{
+font-size: 30px;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+    section .cards{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+position: relative;
+transform: translateY(150px);
+opacity: 0;
+transition: all 1s ease;
+}
+
+.reveal.active{
+transform: translateY(0px);
+opacity: 1;
+}
