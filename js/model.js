@@ -43,15 +43,14 @@ const leftArrow = document.getElementById('leftArrow');
 const rightArrow = document.getElementById('rightArrow');
 const menu = document.getElementById('menu');
 
-// Establish unchanging constants and initialize variables.
-const menuWrapperSize = document.getElementById('menu-wrapper').offsetWidth; // Unchanging area of the screen where the menu is always visible.
-const menuSize = document.getElementById('menu').offsetWidth;	// Includes itemsCount * itemSize but also factors in space between items added by flexbox.
-const menuInvisibleSize = Math.max(menuSize - menuWrapperSize, 0);	// Fixed portion of scrollable menu that is hidden at all times, or zero if menu fits within container.
-const arrowSize = rightArrow.offsetWidth;	// Width of each arrow div. In current design, this equates to 12px. Still computes value even if right arrow is hidden, which it is at time this line is executed.
-const menuEndOffset = Math.max(menuInvisibleSize - arrowSize, 0);	// Fixed portion of scrollable menu that is not obscured by an overlapping arrow key, or zero if no arrow keys are needed.
-const itemsCount = document.getElementsByClassName('item').length; // Number of menu items.
-const itemSize = document.getElementsByClassName('item')[0].offsetWidth; // offsetWidth includes borders and padding but not margins of a menu item (since all the same, choose first one in array). FYI, clientWidth includes padding but NOT borders and margins.
-const itemsSpaceBetween = (menuSize - (itemsCount * itemSize)) / (itemsCount - 1);	// Space between menu items is deliberately set to equal menu wrapper padding left/right. In this design it is 20 pixels.
+const menuWrapperSize = document.getElementById('menu-wrapper').offsetWidth; 
+const menuSize = document.getElementById('menu').offsetWidth;	
+const menuInvisibleSize = Math.max(menuSize - menuWrapperSize, 0);	
+const arrowSize = rightArrow.offsetWidth;	
+const menuEndOffset = Math.max(menuInvisibleSize - arrowSize, 0);	
+const itemsCount = document.getElementsByClassName('item').length; 
+const itemSize = document.getElementsByClassName('item')[0].offsetWidth;
+const itemsSpaceBetween = (menuSize - (itemsCount * itemSize)) / (itemsCount - 1);	
 const distanceInPixels = itemSize + itemsSpaceBetween;	
 const durationInMilliseconds = 500;
 let starttime = null;
