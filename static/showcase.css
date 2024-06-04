@@ -5,7 +5,7 @@
 
 body {
     background-color: #808080;
-    /* background-image: url("../"); */
+    /* background-image: url("../images/"); */
     margin: 0;
     padding: 0;
     display: flex;
@@ -113,7 +113,7 @@ text-transform: uppercase;
 margin-bottom: 10px;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1200px){
     section .cards{
         flex-direction: column;
     }
@@ -207,3 +207,72 @@ button {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+
+.menu-wrapper {
+    position: relative; /* Required for arrow keys to be absolutely positioned child divs inside menu-wrapper parent. */
+    width: 1250px;
+    height: 500px;  /* Intentionally shorter than menu items, to hide horizontal scroll bar. */
+    margin: 1em auto;
+    border: 1px solid black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;  /* Inner space on the left and right sides of wrapper must match flexbox gap space between menu items. */
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none; 
+  }
+  
+  .menu {
+    height: 120px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .menu .item {
+    background: #f3f3f3;  
+    width: 720px;
+    height: 450px;
+    outline: 1px dotted gray;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;            
+    align-items: center;
+    justify-content: center;  
+  }
+  
+  .arrows {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .left-arrow {
+    left: 0;
+    width: 100px;
+    height: 450px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  
+  .right-arrow {
+    right: 0;
+    width: 100px;
+    height: 450px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
